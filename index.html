@@ -4,112 +4,132 @@
     <meta charset="UTF-8" />
     <title>Best Business Banking Platorm</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <nav>
-      <ul>
-        <li class="dropdown"><a href="#">Products</a>
-          
-          <ul class="menu-area">
-            <ul>
-              <h4>OUR PRODUCTS</h4>
-            <li><a href="#"> Account</a></li>
-            <li><a href="#">Payment Gateway</a></li>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#">App Store</a></li>
-            <li><a href="#">Payroll</a></li>
-            </ul>
-          
-            <ul>
-              <h4>OUR PRODUCTS</h4>
-            <li><a href="#">Accounting</a></li>
-            <li><a href="#">UPI Autopay</a></li>
-            <li><a href="#">Payout</a></li>
-            <li><a href="#">Invoice</a></li>
-            <li><a href="#">Cash Management</a></li>
-            </ul>
-          </ul>
-        </li>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Products</a>
 
-        <li class="dropdown"><a href="#">Solutions</a>
-          <ul class="menu-area">
-            <ul>
-            <li><a href="#">Freelancer</a></li>
-            <li><a href="#">SMEs</a></li>
-            <li><a href="#">Startup</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Partners</a></li>
-            </ul>
-          </ul>
-        </li>
-        <li><a href="#"> Pricing </a></li>
-        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: 140px;">Login</button></li>
-        <li><a href="#"> Get Started </a></li>
-      </ul>
-    </nav>
-    
-    <div id='login-form' class="login-page">
-      <div class="form-box">
-        <div class="button-box">
-          <div id="btn"></div>
-          <button type="button" onclick="login()" class="toggle-btn">Login</button>
-          <button type="button" onclick="register()" class="toggle-btn">Signup</button>
+            <ul class="menu-area">
+              <ul>
+                <h4>OUR PRODUCTS</h4>
+                <li><a href="#"> Account</a></li>
+                <li><a href="#">Payment Gateway</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">App Store</a></li>
+                <li><a href="#">Payroll</a></li>
+              </ul>
 
+              <ul>
+                <h4>OUR PRODUCTS</h4>
+                <li><a href="#">Accounting</a></li>
+                <li><a href="#">UPI Autopay</a></li>
+                <li><a href="#">Payout</a></li>
+                <li><a href="#">Invoice</a></li>
+                <li><a href="#">Cash Management</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Solutions</a>
+            <ul class="menu-area">
+              <ul>
+                <li><a href="#">Freelancer</a></li>
+                <li><a href="#">SMEs</a></li>
+                <li><a href="#">Startup</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Partners</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li><a href="#"> Pricing </a></li>
+          <li>
+            <button
+              class="loginbtn"
+              onclick="document.getElementById('login-form').style.display='block'"
+              style="width: 140px"
+            >
+              Login
+            </button>
+          </li>
+
+          <li><a href="#"> Get Started </a></li>
+        </ul>
+      </nav>
+
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Login
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Signup
+            </button>
+          </div>
+          <form id="login" class="input-group-login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email-ID"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Emter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email-ID"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Emter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >I Agree to the terms and conditions</span
+            >
+            <button type="submit" class="submit-btn">Signup</button>
+          </form>
         </div>
-        <form id="login" class="input-group-login">
-          <input type="text" class="input-field" placeholder="Email-ID" required>
-          <input type="password" class="input-field" placeholder="Emter Password" required>
-          <input type="checkbox" class="check-box"><span>Remember Password</span>
-          <button type="submit" class="submit-btn">Login</button>
-
-        </form>
-
-        <form id="register" class="input-group-register">
-          <input type="text" class="input-field" placeholder="First Name" required>
-          <input type="text" class="input-field" placeholder="Last Name" required>
-          <input type="email" class="input-field" placeholder="Email-ID" required>
-          <input type="password" class="input-field" placeholder="Emter Password" required>
-          <input type="password" class="input-field" placeholder="Confirm Password" required>
-          <input type="checkbox" class="check-box"><span>I Agree to the terms and conditions</span>
-          <button type="submit" class="submit-btn">Signup</button>
-
-        </form>
-        
-
-        
-
       </div>
-
     </div>
-  
-    </div>
-    <script>
-      var x =document.getElementById('login');
-      var y =document.getElementById('register');
-      var z =document.getElementById('btn');
-      function register()
-      {
-        x.style.left= '-400px';
-        y.style.left= '50px';
-        z.style.left= '110px';
-      }
-
-      function login()
-      {
-        x.style.left= '50px';
-        y.style.left= '450px';
-        z.style.left= '0px';
-      }
-    </script>
-    <script>
-      var modal = document.getElementById('login-form');
-      window.onclick = function(event){
-        if (event.target == modal)
-        {
-          modal.style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
