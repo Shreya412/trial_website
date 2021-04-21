@@ -12,6 +12,8 @@ body {
   width: 1170px;
   margin: 20px auto;
 }
+
+/*navigation*/
 .navbar{
   display: flex;
   align-items: center;
@@ -132,6 +134,8 @@ nav ul li button:hover{
   color: #fff;
 }
 
+
+/* Login*/
 #login-form{
   display: none ;
   
@@ -160,6 +164,7 @@ nav ul li button:hover{
   border: 0;
   outline: none;
   position: relative;
+  
 }
 #btn{
   top: 0;
@@ -170,6 +175,7 @@ nav ul li button:hover{
   background: #F3C693;
   border-radius: 30px;
   transition: .5s;
+  
 }
 .input-group-login{
   top: 150px;
@@ -230,7 +236,7 @@ span{
   font-size: 15;
 }
 
-
+/*footer*/
 footer {
   margin: auto;
   padding: 5% 0% 0% 5%;
@@ -239,6 +245,112 @@ footer {
 
 
 
+/* Pricing*/
+.price_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.pricing-plan{
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555555;
+  margin: 15px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.price_highlight{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.price_header{
+  padding: 25px;
+  background: purple;
+  color: #ffffff;
+}
+
+.price_title,
+.price_summary{
+  margin: 0;
+  text-align: center;
+}
+
+.price_title{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.price_summary{
+  font-size: 1em;
+  font-weight: 300;
+}
+.description{
+  padding: 25px;
+}
+.plan_list{
+  padding: 0;
+  margin: 0;
+}
+
+.feature{
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+.feature:not(:last-child){
+  margin-bottom: 0.5em;
+}
+.feature::before{
+  content: "\2714";
+  color: purple;
+  position: absolute;
+  left: 0;
+}
+.plan_action{
+  padding: 25px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+
+}
+.plan_btn{
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: purple;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid purple;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+.plan_btn:hover{
+  background: purple;
+  text-align: center;
+}
+.plan_cost{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+
+}
+.plan_text{
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0 0 10px 0;
+
+}
 
 
 /*.wrapper ul {

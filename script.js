@@ -1,6 +1,6 @@
-// $('.wrapper').slideUp(1000, function(){
-//   document.querySelector('.wrapper').style.display = 'block';
-// });
+ /*$('.wrapper').slideUp(1000, function(){
+   document.querySelector('.wrapper').style.display = 'block';
+});*/
 
 
 var x = document.getElementById("login");

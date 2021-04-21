@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Business Banking Platorm</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Products</a>
+
+              <ul class="menu-area">
+                <ul>
+                  <h4>OUR PRODUCTS</h4>
+                  <li><a href="#"> Account</a></li>
+                  <li><a href="#">Payment Gateway</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">App Store</a></li>
+                  <li><a href="#">Payroll</a></li>
+                </ul>
+
+                <ul>
+                  <h4>OUR PRODUCTS</h4>
+                  <li><a href="#">Accounting</a></li>
+                  <li><a href="#">UPI Autopay</a></li>
+                  <li><a href="#">Payout</a></li>
+                  <li><a href="#">Invoice</a></li>
+                  <li><a href="#">Cash Management</a></li>
+                </ul>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Solutions</a>
+              <ul class="menu-area">
+                <ul>
+                  <li><a href="#">Freelancer</a></li>
+                  <li><a href="#">SMEs</a></li>
+                  <li><a href="#">Startup</a></li>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Partners</a></li>
+                </ul>
+              </ul>
+            </li>
+
+            <li class="selected">
+                <a href="#"> Pricing </a>
+            </li>
+            <li>
+              <button class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: 140px"> Login </button>
+            </li>
+
+            <li><a href="#"> Get Started </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Login
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Signup
+            </button>
+          </div>
+          <form id="login" class="input-group-login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email-ID"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Emter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email-ID"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Emter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >I Agree to the terms and conditions</span
+            >
+            <button type="submit" class="submit-btn">Signup</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="price_container">
+           <section class="pricing-plan ">
+        <div class="price_header">
+            <h1 class="price_title">Solo</h1>
+            <h2 class="price_summary">For freelancers & entrepreneurs who are just starting out</h2>
+        </div>
+        <div class="description">
+            <ul class="plan_list">
+                <li class="feature"> Open Account - Limited</li>
+                <li class="feature"> Role-Based Access Control - 1 User</li>
+                <li class="feature"> VISA Cards - 1 Card</li>
+                <li class="feature"> Expense Management - Limited</li>
+                <li class="feature"> Accounting - Limited</li>
+                <li class="feature"> API - Limited</li>
+            </ul>
+
+        </div>
+        <div class="plan_action">
+            <p class="plan_cost" style="font-weight: bold;">FREE</p>
+            <p class="plan_text"></p>
+            <a href="./" class="plan_btn">Get Started</a>
+        </div>
+
+      </section>
+
+      <section class="pricing-plan price_highlight">
+        <div class="price_header">
+            <h1 class="price_title">Startup</h1>
+            <h2 class="price_summary">For freelancers & early-stage Startups / SMEs</h2>
+        </div>
+        <div class="description">
+            <ul class="plan_list">
+                <li class="feature"> Open Account - Advanced</li>
+                <li class="feature"> Role-Based Access Control - 5 User</li>
+                <li class="feature"> VISA Cards - 5 Card</li>
+                <li class="feature"> Expense Management - Advanced</li>
+                <li class="feature"> Accounting - Advanced</li>
+                <li class="feature"> API - Limited</li>
+            </ul>
+
+        </div>
+        <div class="plan_action">
+            <p class="plan_cost" style="font-weight: bold;">₹600</p>
+            <p class="plan_text">per month</p>
+            <a href="./" class="plan_btn">Get Started</a>
+        </div>
+
+      </section>
+
+      <section class="pricing-plan ">
+        <div class="price_header">
+            <h1 class="price_title">Growth</h1>
+            <h2 class="price_summary">For growth-stage startups & enterprises</h2>
+        </div>
+        <div class="description">
+            <ul class="plan_list">
+                <li class="feature"> Open Account - Full Access</li>
+                <li class="feature"> Role-Based Access Control - 10 User</li>
+                <li class="feature"> VISA Cards - 10 Card</li>
+                <li class="feature"> Expense Management - Full Access</li>
+                <li class="feature"> Accounting - Full Access</li>
+                <li class="feature"> API - Full Access</li>
+            </ul>
+
+        </div>
+        <div class="plan_action">
+            <p class="plan_cost" style="font-weight: bold;">₹900</p>
+            <p class="plan_text">per month</p>
+            <a href="./" class="plan_btn">Get Started</a>
+        </div>
+
+      </section>
+    </div>
+
+
+  <footer>
+    <div id="footer1">
+      <img src="img/logo-open.svg" alt="logo">
+      <select name="Country" id="Country">
+        <option>Select Region</option>
+        <option value="Inida">India</option>
+        <option value="USA">USA</option>
+      </select>
+      <address>
+        Open Financial Technologies Pvt Ltd,<br>
+        Tower 2, 3rd floor, RGA Tech Park,<br>
+        Sarjapur Road, Bengaluru <br>
+        Karnataka - 560035 <br>
+      </address>
+    </div>
+
+    <div id="footer2">
+      <a href="#" style="font-style:bold;">Company</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact US</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Condition</a>
+    </div>
+    
+  </footer>
+</div>
+  </body>
+</html>
