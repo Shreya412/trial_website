@@ -1,11 +1,12 @@
- /*$('.wrapper').slideUp(1000, function(){
-   document.querySelector('.wrapper').style.display = 'block';
+/*$('.wrapper').slideUp(1000, function(){
+  document.querySelector('.wrapper').style.display = 'block';
 });*/
 
 
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 var z = document.getElementById("btn");
+
 function register() {
   x.style.left = "-400px";
   y.style.left = "50px";
@@ -25,3 +26,21 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+
+
+
+// Pricing blocks
+
+var pricingPlan = document.querySelectorAll('section.pricing-plan');
+
+pricingPlan.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.classList.add('price_highlight');
+  });
+
+  item.addEventListener('mouseleave', () => {
+    item.classList.remove('price_highlight');
+  });
+});

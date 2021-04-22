@@ -337,6 +337,7 @@ footer {
 .plan_btn:hover{
   background: purple;
   text-align: center;
+  color: #fff;
 }
 .plan_cost{
   margin: 0;
