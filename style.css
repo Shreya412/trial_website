@@ -9,7 +9,7 @@ body {
   
 }
 .wrapper {
-  width: 1170px;
+  
   margin: 20px auto;
 }
 
@@ -21,13 +21,14 @@ body {
   padding-left: 50px;
   padding-right: 30px;
   padding-top: 50px;
+  
 }
 nav{
   position: absolute;
   background: #262626;
   font-size: 16px;
   padding: 20px;
-  
+  margin-right: 50px;
 }
 nav > ul{
   position: relative;
@@ -352,6 +353,42 @@ footer {
   margin: 0 0 10px 0;
 
 }
+
+/*news*/
+.news{
+  padding: 0 50px;
+  position: relative;
+}
+.news h3{
+  font-size: 28px;
+  margin-top: 80px;
+  
+  margin-left: 50px;
+}
+
+
+.news-inner{
+  margin-top: 10px;
+  
+}
+.news-inner a{
+  display: inline-block;
+  width: 14%;
+  padding: 15px;
+  margin: 25px;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 #cacaca;
+}
+
+.news-inner img{
+  width: 100%;
+}
+
+
+/*middle content*/
+
+
 
 
 /*.wrapper ul {
